@@ -150,7 +150,7 @@ const [isLoading, setLoading] = useState(true)
           {!isLoading && todos && todos.map((todo:any) => (
             <li
               key={todo._id}
-              className="bg-slate-800 px-6 py-5 rounded-lg my-3 hover:text-green-400 text-lg w-full flex justify-between items-start"
+              className="bg-slate-900 px-6 py-5 rounded-lg my-3 hover:text-green-400 text-lg w-full flex justify-between items-start"
             >
               <div className="flex justify-start items-start w-8/12">
                 <input
@@ -163,14 +163,14 @@ const [isLoading, setLoading] = useState(true)
                 <span
                   className={`${
                     todo.completed ? "line-through" : "list-none"
-                  } px-4 w-full text-gray-300`}
+                  } px-4 w-full text-yellow-500`}
                 >
                   {todo.text}
                 </span>
               </div>
-              <div className="w-4/12 lg:w-2/12">
+              <div className="w-4/12 md:w-3/12">
                 <button
-                  className="text-yellow-400 uppercase md:text-base text-sm px-3 hover:text-yellow-600"
+                  className="text-sky-400 uppercase md:text-base text-sm px-3 hover:text-sky-600"
                   onClick={() => handleEdit(todo)}
                 >
                   Edit
